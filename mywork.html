@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -10,8 +11,12 @@
     <title>My Work</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-html {overflow: scroll;
--webkit-overflow-scrolling: touch;  }
+  
+  html {
+    overflow: scroll;
+-webkit-overflow-scrolling: touch; 
+  scroll-behavior: smooth;
+}
 
         body {
           overflow: scroll;
@@ -21,6 +26,24 @@ html {overflow: scroll;
         }
         ol {
           margin-top: 20px;
+        }
+        ul {
+          list-style: "";
+        }
+        a:link {
+            color: rgb(51, 51, 51);
+        }
+
+        a:visited {
+          color: rgb(0, 14, 59);
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+
+        a:active {
+          text-decoration: underline;
         }
         div{
           display: block;
@@ -46,22 +69,30 @@ html {overflow: scroll;
           height: 300px;
           width: 300px;
         }
+        .navbar-nav > #li1{
+             margin-right:30px;
+        }
         </style>
 </head>    
 <body>
   <nav class="navbar fixed-top navbar-expand-sm bg-dark">
     <div class="container">
-    <ul class="navbar-nav">
-      <li class="nav-item">
+    <ul class="navbar-nav" >
+      <li class="nav-item " >
+      <i class="fa fa-github" style="color: white; font-size: 37px;"></i>
+    </li>
+      <li class="nav-item" id="li1">
         <a class="nav-link" href="https://github.com/ashu131998/" target="blank" style="color:white;">Github</a>
-      </li>
-      <li class="nav-item" >
+        <li class="nav-item" >
+          <i class="fa fa-linkedin" style="color: white; font-size: 25px;  margin-top: 6px;" ></i>
+        </li>
+        <li class="nav-item" >
         <a class="nav-link" href="https://www.linkedin.com/in/ashutosh-khandelwal-9734514b/" style="color:white;" target="blank">LinkedIn</a>
       </li>
     </ul></div>
   </nav>
     <div id="photo">
-      <img src="index.png" alt="Ashutosh Khandelwal" class="rounded-circle"></div>
+      <img src="index.png" alt="Italian Trulli" class="rounded-circle"></div>
     
       <div class="jumbotron text-center">
       <h3>Ashutosh Khandelwal</h3>
@@ -84,15 +115,28 @@ html {overflow: scroll;
     <div class="col-sm-6">
       <h1 id="h1Project">Projects</h1>
     <ul class="list-group">
-            <li class="list-group-item"  data-toggle="collapse"><button type="button" class="btn btn-outline-light text-dark" data-toggle="collapse" data-target="#demo">AI Algorithms</button></li> 
+             <li class="list-group-item"  data-toggle="collapse"><button type="button" class="btn btn-light" data-toggle="collapse" data-target="#demo3">Depoying Keras model in WebAPP using Tensorflow Js</button></li> 
+             <ul id="demo3"  class="collapse">
+             <a href="https://ashu131998.github.io/Webapp/Webapp/WebApp.html"target = "_blank"><li>WebApp</li></a> 
+             <a href="https://github.com/ashu131998/Webapp"target = "_blank"><li>Codes of Tensorflow model and Website</dd></a>
+             </ul>
+
+
+
+            <li class="list-group-item"  data-toggle="collapse"><button type="button" class="btn btn-light" data-toggle="collapse" data-target="#demo1">Python | Understanding Style Transfer using CNNs</button></li> 
+            <ul id="demo1"  class="collapse">
+            <a href="https://www.codespeedy.com/python-understanding-style-transfer-using-cnns/"target = "_blank"><li>Article and Discription</dd></a> 
+            <a href="https://github.com/ashu131998/Nueral-style-transfer/blob/master/NST_Complete.ipynb"target = "_blank"><li>Code</dd></a>
+            </ul>
+            <li class="list-group-item"  data-toggle="collapse"><button type="button" class="btn btn-light" data-toggle="collapse" data-target="#demo">AI Algorithms</button></li> 
             <ul id="demo"  class="collapse">
             <a href="https://github.com/ashu131998/Customer-churn-prediction-using-machine-learning"target = "_blank"><li>Customer Churn Analysis</dd></a> 
             <a href="https://www.codespeedy.com/machine-learning-model-to-predict-bitcoin-price-in-python/"target = "_blank"><li>Machine Learning Model to predict Bitcoin Price in Python</dd></a>
             <a href="https://github.com/ashu131998/Customer-churn-prediction-using-machine-learning/blob/master/DecisionTree.ipynb"target = "_blank"><li >Understanding Deep Belief Networks in Python</dd></a>
             </ul>
+         
          <a href="https://github.com/ashu131998/Word-Cloud-using-python/blob/master/Final_Project_Word_cloud.ipynb"target = "_blank"><li class="list-group-item">Word Cloud in Python</li></a>
-         <a href="https://www.codespeedy.com/understanding-deep-belief-networks-in-python/"target = "_blank"><li class="list-group-item">Python | Understanding Style Transfer using CNNs</li></a>
-         <a href="https://ashu131998.github.io/Webapp/Webapp/WebApp.html"target="_blank"><li class="list-group-item">Depoying Keras model in WebAPP using Tensorflow Js</li></a>
+         
     </ul>  
   </div></div></div>
     <br>    
