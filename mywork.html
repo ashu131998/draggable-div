@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Draggable Div</title>
     <style>
@@ -98,9 +97,10 @@
             background-color: #1e3c72;
 
         }
-        #undoBtn:hover{
-            background-color: #2a5298;
 
+        #undoBtn:disabled{
+            background-color: #cccccc;
+            pointer-events: none;
         }
     </style>
 </head>
@@ -250,5 +250,4 @@
         });
     </script>
 </body>
-
 </html>
